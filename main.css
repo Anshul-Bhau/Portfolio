@@ -16,6 +16,14 @@
 
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+section,div{
+    scroll-margin-top: 110px; /* adjust based on your navbar height */
+}
+
 body {
     background: url("images/intro-section-bg.jpg") no-repeat center center fixed;
     background-repeat: no-repeat;
@@ -393,7 +401,6 @@ body {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     border-left: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 40px;
-    margin-bottom: 13%;
 }
 
 .contact-intro{
