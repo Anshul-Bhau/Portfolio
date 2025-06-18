@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Bowlby+One&family=Meie+Script&family=Miss+Fajardose&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Teko:wght@300..700&display=swap');
 
 @font-face {
     font-family: 'Beckan-Personal-Use';
@@ -8,7 +7,6 @@
     font-style: normal;
 }
 
-
 * {
     margin: 0;
     padding: 0;
@@ -16,19 +14,15 @@
 
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-section,div{
-    scroll-margin-top: 110px; /* adjust based on your navbar height */
-}
-
 body {
-    background: url("images/intro-section-bg.jpg") no-repeat center center fixed;
+    /* background: url("images/intro-section-bg.jpg") no-repeat center center fixed; */
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment:fixed;
+    background-attachment: fixed;
     background-position: center;
     height: 100vh;
     background-color: black;
@@ -37,15 +31,15 @@ body {
 
 .nav-left-elem a {
     display: flex;
-    color: burlywood;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     justify-self: flex-start;
-    
+    font-size: 20px;
 }
 
-.nav-right-elem{
+.nav-right-elem {
     justify-self: flex-end;
-    color: burlywood;
+    color: rgb(255, 255, 255);
     display: flex;
 }
 
@@ -54,48 +48,102 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background: rgba(255, 255, 255, 0.09);
-    font-family: "DM Serif Text", serif;
+    font-family: "Advent Pro", sans-serif;
     font-weight: 400;
     font-style: normal;
-    padding: 0.7rem 1.5rem;
-    backdrop-filter: blur(5px);
-    border-bottom: 2px solid floralwhite;
-    position: fixed;
+    margin: 1rem 2.1rem;
+    padding: 1.2rem 2.1rem;
+    position: relative;
     top: 0;
     left: 0;
-    width: 100%;
-    z-index: 999;
 }
 
 .list-items {
     display: flex;
     flex-direction: row;
-    gap: 4rem;
-    margin-right: 1.5rem;
+    gap: 2rem;
+    margin-right: 3rem;
     list-style: none;
 
 }
 
 .list-items li a {
     text-decoration: none;
-    color: burlywood;
+    color: rgb(255, 255, 255);
     font-size: 1.1rem;
+}
+
+.hero-sec {
+    position: relative;
+    top: 3%;
+    color: white;
+    width: auto;
+    height: auto;
+    align-items: center;
+    display: flex;
+    height: 80vh;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 40px;
+}
+
+.img-1 img {
+    position: relative;
+    height: 17rem;
+    width: 17rem;
+
+}
+
+.hero-cont {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero-cont p {
+    font-family: "Space Mono", monospace;
+}
+
+#First-name {
+    font-family: 'Beckan-Personal-Use';
+    font-weight: 700;
+    font-size: 8rem;
+    line-height: 8rem;
+}
+
+.hero-cont ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    font-family: "Bowlby One", sans-serif;
+    font-size: 9rem;
+    line-height: 6rem;
+}
+
+#B {
+    color: rgb(88, 127, 227);
+}
+
+#H {
+    color: rgb(133, 192, 66)
+}
+
+#A {
+    color: rgb(181, 59, 163);
+}
+
+#U {
+    color: rgba(196, 188, 41, 0.995);
 }
 
 .intro-container {
     height: auto;
     width: 90%;
-    background: rgba(255, 255, 255, 0.01);
-    margin: 1.5rem 2rem;
+    margin: 120px 2rem;
     align-items: center;
-    backdrop-filter: blur(5px);
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    border-left: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 40px;
-    margin-top: 5rem;
 }
+
 
 .intro {
     display: flex;
@@ -104,273 +152,265 @@ body {
     flex-direction: row;
 }
 
-#Hello-text {
-    font-family: "Beckan-Personal-Use";
-    font-size: 6rem;
-    color: bisque;
+.intro h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.5rem;
+    color: rgb(255, 255, 255);
     margin-left: 3.5rem;
-    letter-spacing: 0.1rem;
+    font-weight: 500;
 }
+
+.second-line {
+    margin-bottom: 3rem;
+}
+
+#enjoy {
+    font-family: "Meie Script", cursive;
+    color: rgb(88, 127, 227);
+}
+
 
 .img-container img {
-    max-height: 80vh;
-    padding: 1.2rem 0.8rem;
-    border-radius: 35px;
-    display: flex;
-    align-self: flex-end;
+    /* max-height: 80vh; */
+    position: relative;
+    height: 70vh;
+    width: auto;
+    padding: 2rem 0.8rem;
 }
 
-#intro-text{
+#intro-text {
     display: flex;
-    color:antiquewhite;
-    width: 40vw;
-    font-size: 1.55rem;
+    color: rgb(255, 255, 255);
+    width: 45vw;
+    font-size: 20px;
     margin-left: 3.5rem;
-    text-align: justify;
-    font-family: 'Times New Roman', Times, serif;
-    line-height: 117%;
-    word-spacing: 3px;
+    font-family: monospace;
+
 }
 
-.proj-container{
+.btm-cont {
+    position: relative;
+    ;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 30vh;
+    left: 33%;
+    gap: 4px;
+}
+
+.email {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.email a {
+    text-decoration: none;
+    color: white;
+    font-family: monospace;
+    font-size: 1rem;
+}
+
+.place {
+    text-align: center;
+    color: white;
+    font-family: monospace;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.proj-container {
     height: auto;
     width: 90%;
     background: rgba(255, 255, 255, 0.01);
     margin: 1.5rem 2rem;
     align-items: center;
-    backdrop-filter: blur(5px);
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    border-left: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 40px;
     margin-top: 7%;
 }
 
-.projects-title{
-    font-family: "Beckan-Personal-Use";
-    font-size: 4rem;
-    color: bisque;
+.projects-title {
+    font-family: "Meie Script", cursive;
+    font-size: 3rem;
+    color: rgb(196, 188, 41);
     margin-left: 3.5rem;
-    letter-spacing: 0.1rem;
+    margin-bottom: 2rem;
 }
 
-.projects-blah{
-    display: flex;
-    color:antiquewhite;
-    width: 30vw;
-    font-size: 1.55rem;
-    margin-left: 3.5rem;
-    text-align: justify;
-    font-family: 'Times New Roman', Times, serif;
-    line-height: 117%;
-    word-spacing: 3px;
-    padding-bottom: 10px;
+#proj {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 2.5rem;
 }
 
-
-.project-card1{
+.project-card1 {
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: auto;
+    height: 370px;
     width: 360px;
-    background: rgba(255, 255, 255, 0.01);
     margin: 1.5rem 2rem;
-    backdrop-filter: blur(5px);
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    border-left: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 40px;
     justify-content: center;
     padding-bottom: 3%;
 }
+
 .project-card1 img {
     height: 130px;
     width: 130px;
-    background: beige;
     margin: 1.5rem 2rem;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    border-left: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 40px;
+    border-radius: 5px;
 }
 
 .project-card1 a {
     text-decoration: none;
-    color:antiquewhite;
+    color: rgb(196, 188, 41);
     width: 30vw;
     font-size: 1.55rem;
     align-self: center;
     text-align: center;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     line-height: 117%;
     word-spacing: 3px;
     padding-bottom: 10px;
 }
 
 
-.proj1-info{
-    color:antiquewhite;
-    width: 30vw;
+.proj1-info {
+    color: rgb(255, 255, 255);
+    width: 20vw;
     font-size: 1rem;
     text-align: justify;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Advent Pro", sans-serif;
+    font-weight: 700;
     line-height: 117%;
     word-spacing: 3px;
     padding: 0rem 1.7rem;
-    
+
 }
 
-.project-card2{
+.project-card2 {
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: auto;
+    height: 370px;
     width: 360px;
-    background: rgba(255, 255, 255, 0.01);
     margin: 1.5rem 2rem;
-    backdrop-filter: blur(5px);
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    border-left: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 40px;
     justify-content: center;
     padding-bottom: 3%;
 }
+
 .project-card2 img {
     height: 130px;
     width: 130px;
-    background: beige;
     margin: 1.5rem 2rem;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    border-left: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 40px;
+    border-radius: 5px;
 }
 
 .project-card2 a {
     text-decoration: none;
-    color:antiquewhite;
+    color: rgb(196, 188, 41);
     width: 30vw;
     font-size: 1.55rem;
     align-self: center;
     text-align: center;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     line-height: 117%;
     word-spacing: 3px;
     padding-bottom: 10px;
 }
 
-
-.proj2-info{
-    color:antiquewhite;
-    width: 30vw;
+.proj2-info {
+    color: rgb(255, 255, 255);
+    width: 20vw;
     font-size: 1rem;
     text-align: justify;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Advent Pro", sans-serif;
+    font-weight: 700;
     line-height: 117%;
     word-spacing: 3px;
     padding: 0rem 1.7rem;
-    
+
 }
 
-.project-card3{
+.project-card3 {
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: auto;
+    height: 370px;
     width: 360px;
-    background: rgba(255, 255, 255, 0.01);
     margin: 1.5rem 2rem;
-    backdrop-filter: blur(5px);
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    border-left: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 40px;
     justify-content: center;
     padding-bottom: 3%;
 }
+
 .project-card3 img {
     height: 130px;
     width: 130px;
-    background: beige;
     margin: 1.5rem 2rem;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    border-left: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 40px;
+    border-radius: 5px;
 }
 
 .project-card3 a {
     text-decoration: none;
-    color:antiquewhite;
+    color: rgb(196, 188, 41);
     width: 30vw;
     font-size: 1.55rem;
     align-self: center;
     text-align: center;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     line-height: 117%;
     word-spacing: 3px;
     padding-bottom: 10px;
 }
 
 
-.proj3-info{
-    color:antiquewhite;
-    width: 30vw;
+.proj3-info {
+    color: rgb(255, 255, 255);
+    width: 20vw;
     font-size: 1rem;
     text-align: justify;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Advent Pro", sans-serif;
+    font-weight: 700;
     line-height: 117%;
     word-spacing: 3px;
     padding: 0rem 1.7rem;
-    
+
 }
 
-.project-card-container{
+.project-card-container {
     display: flex;
     flex-direction: row;
     /* justify-content: center; */
     align-items: center;
-    width: 90%;
+    width: 100%;
+    margin-bottom: 7rem;
 }
 
-.skills-title{
-    font-family: "Beckan-Personal-Use";
-    font-size: 4rem;
-    color: bisque;
+.skills-title {
+    font-family: "Meie Script", cursive;
+    font-size: 3rem;
+    color: rgb(181, 59, 163);
     margin-left: 3.5rem;
-    height: auto;
-    width: 90%;
-    background: rgba(255, 255, 255, 0.01);
-    margin: 1.5rem 2rem;
-    align-items: center;
-    backdrop-filter: blur(5px);
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    border-left: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 40px;
     margin-top: 7%;
-    padding-left: 3.5rem;
-    letter-spacing: 0.1rem;
 }
 
-.skill-items{
+#skillset {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.5rem;
+    color: rgb(255, 255, 255);
+
+}
+
+.skill-items {
     height: auto;
     width: 90%;
-    background: rgba(255, 255, 255, 0.01);
     margin: 1.5rem 2rem;
     align-items: center;
-    backdrop-filter: blur(5px);
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    border-left: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 40px;
     margin-bottom: 8%;
-    
+
 }
 
-.skill-list{
+.skill-list {
     list-style: none;
     display: grid;
     padding: 2rem 4rem;
@@ -383,84 +423,122 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: antiquewhite;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
+    font-family: "Advent Pro", sans-serif;
+    font-size: 1.5rem;
     text-align: center;
-    font-weight: 200;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 
-.contact-section{
-    height: auto;
-    width: 90%;
-    background: rgba(255, 255, 255, 0.01);
-    margin: 1.5rem 2rem;
-    align-items: center;
-    backdrop-filter: blur(5px);
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    border-left: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 40px;
-}
-
-.contact-intro{
-    font-family: "Beckan-Personal-Use";
-    font-size: 4rem;
-    color: bisque;
-    margin-left: 3.5rem;
-    letter-spacing: 0.1rem;
-}
-
-.contact-section a{
-    text-decoration: none;
-    color:antiquewhite;
-    width: 30vw;
-    font-size: 1.3rem;
-    text-align: justify;
-    font-family: 'Times New Roman', Times, serif;
-    line-height: 117%;
-    word-spacing: 3px;
-    padding: 1rem 1.7rem;
-    margin-left: 2.7rem;
-
-}
-
-.social-list-container{
+.resume {
+    position: relative;
     display: flex;
     flex-direction: row;
+    gap: 1rem;
+    margin: 3rem;
 }
 
-.socials-text{
-    text-decoration: none;
-    color:antiquewhite;
-    width: 30vw;
-    font-size: 1.3rem;
-    text-align: justify;
+.resume h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+}
+
+.resume a i {
+    padding-left: 1rem;
+    font-size: 2rem;
+}
+
+.sec-heading {
+    color: white;
     font-family: 'Times New Roman', Times, serif;
-    line-height: 117%;
-    word-spacing: 3px;
-    padding-top: 1.6%;
-    margin-left: 4.2rem;
+    font-size: 2.5rem;
 }
 
-.socials-list{
-    list-style: none;
+.me {
+    color: rgb(133, 192, 66);
+    font-family: "Meie Script", cursive;
+}
+
+.contact-sec {
+    gap: 3rem;
+    margin: auto;
+    display: flex;
+    padding: 1rem;
+    padding-bottom: 5rem;
+    max-width: 1200px;
+    border-bottom: 1.3px solid whitesmoke;
+    flex-direction: column;
+}
+
+.contact-container {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    padding-bottom: 20px;
-    padding-top: 20px;
+    align-items: flex-start;
+    min-height: 100px;
+    justify-content: space-between;
 }
 
-.socials-list a {
-    text-decoration: none;
-    color:antiquewhite;
-    width: 30vw;
+.socials {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 2.5rem;
+}
+
+.info p,
+i {
+    color: white;
     font-size: 1rem;
-    text-align: justify;
-    font-family: 'Times New Roman', Times, serif;
-    line-height: 117%;
-    word-spacing: 3px;
-    padding: 0rem 1.7rem;
-    
+    font-family: monospace;
+    cursor: pointer;
+}
+
+.info i {
+    margin-right: 10px;
+}
+
+.info p {
+    padding: 10px 15px;
+    border: 1px solid #504d4d;
+    border-radius: 3px;
+}
+
+.info .page {
+    text-decoration: none;
+    color: white;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    height: 100%;
+    text-align: right;
+}
+
+
+.links #name {
+    font-family: "Miss Fajardose", cursive;
+    font-size: 4rem;
+    color: white;
+}
+
+.links .cont_icons i {
+    color: white;
+    font-size: 1rem;
+}
+
+.links .cont_icons i:hover {
+    color: #504d4d;
 }
