@@ -126,7 +126,7 @@ body {
 }
 
 #H {
-    color: rgb(133, 192, 66)
+    color: rgb(133, 192, 66);
 }
 
 #A {
@@ -531,7 +531,7 @@ i {
 .links #name {
     font-family: "Miss Fajardose", cursive;
     font-size: 4rem;
-    color: white;
+    color: rgb(133, 192, 66);
 }
 
 .links .cont_icons i {
