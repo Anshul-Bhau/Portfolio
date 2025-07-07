@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Bowlby+One&family=Meie+Script&family=Miss+Fajardose&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Teko:wght@300..700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 @font-face {
     font-family: 'Beckan-Personal-Use';
-    src: url('../fonts/Beckan-Personal-Use.otf') format('opentype');
+    src: url('/Task-1/fonts/Beckan-Personal-Use.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
@@ -19,7 +19,6 @@ html {
 }
 
 body {
-    /* background: url("images/intro-section-bg.jpg") no-repeat center center fixed; */
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -72,7 +71,7 @@ body {
     color: rgb(255, 255, 255);
     font-size: 1.1rem;
 }
-
+/* 
 .hero-sec {
     position: relative;
     top: 3%;
@@ -135,8 +134,8 @@ body {
 
 #U {
     color: rgba(196, 188, 41, 0.995);
-}
-
+} 
+*/
 .intro-container {
     height: auto;
     width: 90%;
@@ -154,19 +153,28 @@ body {
 
 .intro h2 {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     color: rgb(255, 255, 255);
     margin-left: 3.5rem;
     font-weight: 500;
 }
 
-.second-line {
+#intro-name {
+    font-family: "Oswald", sans-serif;
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 4.5rem;
+    letter-spacing: 0.5px;
+    color: #387474;
+}
+
+.first-line {
     margin-bottom: 3rem;
 }
 
 #enjoy {
     font-family: "Meie Script", cursive;
-    color: rgb(88, 127, 227);
+    color: #4d9f9f;
 }
 
 
@@ -175,7 +183,8 @@ body {
     position: relative;
     height: 70vh;
     width: auto;
-    padding: 2rem 0.8rem;
+    bottom: 42px;
+    padding: 3rem 0.8rem;
 }
 
 #intro-text {
@@ -278,8 +287,8 @@ body {
 .proj1-info {
     color: rgb(255, 255, 255);
     width: 20vw;
-    font-size: 1rem;
-    text-align: justify;
+    font-size: 18px;
+    text-align: center;
     font-family: "Advent Pro", sans-serif;
     font-weight: 700;
     line-height: 117%;
@@ -322,8 +331,8 @@ body {
 .proj2-info {
     color: rgb(255, 255, 255);
     width: 20vw;
-    font-size: 1rem;
-    text-align: justify;
+    font-size: 18px;
+    text-align: center;
     font-family: "Advent Pro", sans-serif;
     font-weight: 700;
     line-height: 117%;
@@ -367,8 +376,8 @@ body {
 .proj3-info {
     color: rgb(255, 255, 255);
     width: 20vw;
-    font-size: 1rem;
-    text-align: justify;
+    font-size: 18px;
+    text-align: center;
     font-family: "Advent Pro", sans-serif;
     font-weight: 700;
     line-height: 117%;
@@ -380,7 +389,6 @@ body {
 .project-card-container {
     display: flex;
     flex-direction: row;
-    /* justify-content: center; */
     align-items: center;
     width: 100%;
     margin-bottom: 7rem;
